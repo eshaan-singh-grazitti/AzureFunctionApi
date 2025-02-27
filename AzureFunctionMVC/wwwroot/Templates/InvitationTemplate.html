@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[[GuestName]]'s Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+/*            background: linear-gradient(135deg, #e3f2fd, #fce4ec);*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width:100vw;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .invitation-card {
+            max-width: 100%;
+            max-height: 100%;
+            background: white;
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 5px double #343a40;
+        }
+
+        .event-title {
+            font-size: 35px; 
+            font-weight: bold;
+            color: #8b0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .guest-name {
+            font-size: 35px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .designation {
+            font-size: 28px;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .event-details {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #555;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-card">
+        <h2 class="event-title">An Exclusive Evening of Elegance & Celebration</h2>
+        <p class="guest-name" id="guestName">[[GuestName]]</p>
+        <p class="designation" id="designation">[[Designation]]</p>
+        <hr />
+        <p class="event-details">
+            We are honored to invite you to a spectacular evening of grandeur, refinement, and cherished camaraderie.
+            This is a night where elegance meets celebration, and memories are made to last a lifetime.<br /><br />
+            <strong>Date:</strong> March 15, 2025<br />
+            <strong>Time:</strong> 6:00 PM onwards<br />
+            <strong>Venue:</strong> Grand Ballroom, Hilton Hotel, New York<br /><br />
+        </p>
+        <p class="footer-text">
+            Your presence will be the highlight of this extraordinary evening. We eagerly await your
+            arrival!
+        </p>
+    </div>
+</body>
+
+</html>

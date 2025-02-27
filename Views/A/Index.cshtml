@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', serif;
+    }
+
+    .invitation-card {
+        margin: 10rem 0;
+        width: 90%;
+        max-width: 1000px;
+        background: white;
+        padding: 70px;
+        border-radius: 25px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        border: 5px double #343a40;
+    }
+
+    .event-title {
+        font-size: 45px;
+        font-weight: bold;
+        color: #8b0000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .guest-name {
+        font-size: 36px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .designation {
+        font-size: 28px;
+        color: #6c757d;
+        font-style: italic;
+    }
+
+    .event-details {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .footer-text {
+        margin-top: 30px;
+        font-size: 20px;
+        color: #555;
+        font-style: italic;
+        font-weight: bold;
+    }
+</style>
+<div class="invitation-card">
+    <h2 class="event-title">An Exclusive Evening of Elegance & Celebration</h2>
+    <p class="guest-name" id="guestName">[Guest Name]</p>
+    <p class="designation" id="designation">[Designation]</p>
+    <hr>
+    <p class="event-details">
+        We are honored to invite you to a spectacular evening of grandeur, refinement, and cherished camaraderie. This is a night where elegance meets celebration, and memories are made to last a lifetime.<br><br>
+        <strong>Date:</strong> March 15, 2025<br>
+        <strong>Time:</strong> 6:00 PM onwards<br>
+        <strong>Venue:</strong> Grand Ballroom, Hilton Hotel, New York<br><br>
+        Come dressed in your most dazzling attire and immerse yourself in an enchanting atmosphere of fine dining, live orchestral performances, and inspiring conversations. Let’s raise our glasses to new opportunities, shared success, and the joy of togetherness!
+    </p>
+    <p class="footer-text">Your presence will be the highlight of this extraordinary evening. We eagerly await your arrival!</p>
+</div>
+
+<script>
+    // Example of dynamically inserting guest details
+    document.getElementById("guestName").textContent = "John Doe";
+    document.getElementById("designation").textContent = "CEO, TechCorp";
+</script>
+

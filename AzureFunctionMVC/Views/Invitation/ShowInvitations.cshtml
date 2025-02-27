@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Invitations";
+}
+@model List<string>
+<style>
+    p{
+        margin:0;
+        font-size:1.25rem;
+    }
+</style>
+<div class="container mt-4">
+    <h1 class="mb-3">Invitations</h1>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <ul class="list-group">
+            @foreach (var fileUrl in Model)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>@System.IO.Path.GetFileName(fileUrl)</p>
+                    <a href="@fileUrl" download class="btn btn-primary">Download</a>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No invitations found.</p>
+    }
+</div>
