@@ -94,4 +94,5 @@ namespace AzureFunctionMVC.Controllers
             return View(fileUrls);
         }
     }
+
 }
